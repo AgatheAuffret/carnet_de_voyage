@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+        url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('../foonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+        url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(231, 231, 231);
+    justify-content: space-between;
+}
+/* .........................................................................MAIN.................................................................................... */
+h1{
+    font-family:"robotoregular";
+    color : rgb(255, 81, 0);
+    font-size:2.5rem;
+    text-align: center;
+}
+
+.banner{
+    width:100%;
+    height:200px;
+    background-image:url("../img/U304519.png");
+    background-position: 0 -50px;
+    color: white;
+    font-family: "robotobold";
+    font-size:3rem;
+    line-height: 3;
+}
+
+.banner div {
+    padding-left: 10%;
+}
+
+    h3{
+        font-size: 1.2rem;
+        font-family:"robotoregular";
+        font-weight: 100;
+        width:50%;
+        text-align:justify;
+        margin: 50px auto;
+       
+    }
+    h3:hover{
+        color:grey;
+        padding-left:10px;
+        border-left:2px solid grey;
+    }
+/* .........................................................................MAIN.................................................................................... */
+a{
+    text-decoration: none;
+}
+main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+}
+
+.resume{
+    width:400px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: "robotoregular";
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(255, 255, 255); text-align: center;
+}
+
+.presentation:hover, .interview:hover, .acti:hover, .comm:hover{
+    background-image: none;
+    background-color: rgba(255, 81, 0, 0.795);
+    color:white ;
+}
+
+.acti{
+    background-image: url("../img/activity.jpg");
+    background-position: -5100px -260px;
+    width:400px;
+    height:400px;
+    color:transparent;
+}
+
+article {
+    background-color: rgb(51, 51, 51);
+    width: 400px;
+    height: auto;
+    margin: 20px;
+
+}
+.presentation{
+    background-image: url("../img/equipe.jpg");
+    background-position: -900px -0;
+    width:400px;
+    height:400px;
+    color:transparent;
+}
+
+.comm{
+    background-image: url("../img/cofee.jpg");
+    background-position: -300px -100px;
+    width:400px;
+    height:400px;
+    color:transparent;
+}
+
+.interview{
+    background-image: url("../img/interview.jpg");
+    background-position: -200px -10px;
+    width:400px;
+    height:400px;
+    color:transparent;
+}
+
+p{
+    padding:15%;
+    text-align: justify;
+   font-family: sans-serif;
+   font-size: 1.5rem;
+}
+
+span{
+    font-style: italic;
+    font-size: 1.4rem;
+}
+@media screen and (max-width : 970px) {
+    main{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .resume{
+        width:300px;
+    }
+    
+    main article h2{
+        font-size: 1.2rem;
+    }
+    
+    .presentation{
+        background-position: -250px -150px;
+        width:300px;
+        height:300px;
+  
+    }
+    
+    article {
+        background-color: rgb(51, 51, 51);
+        width: 300px;
+        height: auto;
+        margin: 10px auto;
+        
+    
+    }
+    .acti{
+        background-position: -1090px -300px;
+        width:300px;
+        height:300px;
+
+    }
+    
+    .comm{
+        background-position: -400px -200px;
+        width:300px;
+        height:300px;
+
+    }
+    
+    .interview{
+        background-position: -1200px -50px;
+        width:300px;
+        height:300px;
+    }
+    
+    h3{
+        margin: auto;
+        width: 80%;
+       font-size: 1rem;
+    }
+    
+    span{
+        font-size: 1.1rem;
+    }
+
+    h1{
+        font-size:1.2rem;
+    }
+    .banner{
+        background-position: 0 -100px;
+        height: 150px;
+    }
+} 
+/* ..............................................................................................MENU......................................................................................................... */
+
+nav{
+    font-family: sans-serif;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    font-size: 1rem;
+}
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a{
+    padding: 20px 20px;
+    color: #FFF;
+}
+.submenu{
+    display: none; 
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+.submenu li{
+    border-bottom : 1px solid #CCC;
+}
+.submenu li a{
+    padding: 15px 30px;
+    color:#ffffff;
+    width: 270px;
+}
+nav > ul > li:hover a{
+    padding: 15px 20px 20px 20px;
+}
+.menu:hover{
+    border-top: 5px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.submenu li:hover a{
+    color:#EEE;
+}
+.menu .submenu{
+    background-color: rgba(41, 41, 41, 0.795);
+}
+.menu .submenu li:hover{
+    background-color: rgba(255, 81, 0, 0.795);
+}
+.menu-mobile{
+	color: #fff;
+    background-color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 12px 0;
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+
+@media screen and (max-width : 480px){
+    .menu-mobile {
+	display:block;
+    }
+    nav ul{
+	display: none;
+    }
+    nav ul li, nav ul li a {
+	width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;}}
+
+/* ...............................................................................FOOTER....................................................................... */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(37, 39, 41, 0.822);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+    font-family: sans-serif;
+}

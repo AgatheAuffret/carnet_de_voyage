@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+        url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('./fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+        url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(233, 233, 233);
+    font-size: 15px;
+    margin: auto;
+
+
+}
+
+/* .............................................................................................BANNIERE................................................................................................. */
+
+header {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titre {
+    background-color: white;
+    width: 60%;
+    max-width: 700px;
+    text-align: center;
+    color: black;
+    font-family: "robotobold";
+    font-size: 4rem;
+    margin: auto;
+    margin-top:80px;
+}
+
+.sous_titre {
+    color: white;
+    font-family: "robotobold";
+    font-size: 4rem;
+    text-align: center;
+}
+.logo_orange {
+    display: flex;
+    padding: 5% 0;
+    text-align: center;
+    margin: auto;
+}
+.logo_orange_reduit {
+    display: none;
+}
+
+@media screen and (max-width : 480px){
+    .titre {
+        margin-top:40px;
+        font-size: 2rem;
+    }
+    
+    .sous_titre {
+        font-size: 2rem;
+    }
+    .logo_orange {
+        display: none;
+    }
+    .logo_orange_reduit {
+        display: flex;
+        padding: 5% 0;
+        text-align: center;
+        margin: auto;
+    
+}
+}
+/* .........................................................................................MAIN.......................................................................................................... */
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 20px 0 0 0;
+
+}
+
+p:hover {
+    border-left: 3px solid rgba(0, 0, 0, 0.4);
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.quote {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.sous_sous_titre {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.titre_section {
+    display: flex;
+
+}
+
+.introduction {
+    color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    flex-direction: column;
+    font-family: "robotoregular";
+    width: 600px;
+    background-color: rgba(128, 128, 128, 0.26);
+    padding: 50px;
+    margin: 50px 0;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.247);
+}
+
+.introduction:hover {
+    box-shadow: none;
+}
+
+.bloc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width : 480px){
+    .sous_sous_titre{
+        font-size:1.5rem;
+        padding-left: 15px;
+    }
+    .introduction {
+        width: 85%;
+        background-color: rgba(128, 128, 128, 0.26);
+        padding: 10px;
+        margin: 7% auto;
+        box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.171);
+    }
+    .quote{
+        width:40px;
+        height: 40px;
+    }
+}
+
+
+/* .............................................................................................FOOTER.................................................................................................... */
+.sidebar p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(37, 39, 41, 0.822);
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+    font-family: sans-serif;
+}
+
+/* ..............................................................................................MENU......................................................................................................... */
+
+nav{
+    font-family: sans-serif;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    font-size: 1rem;
+}
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a{
+    padding: 20px 20px;
+    color: #FFF;
+}
+.submenu{
+    display: none; 
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+.submenu li{
+    border-bottom : 1px solid #CCC;
+}
+.submenu li a{
+    padding: 15px 30px;
+    color:#ffffff;
+    width: 270px;
+}
+nav > ul > li:hover a{
+    padding: 15px 20px 20px 20px;
+}
+.menu:hover{
+    border-top: 5px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.submenu li:hover a{
+    color:#EEE;
+}
+.menu .submenu{
+    background-color: rgba(41, 41, 41, 0.795);
+}
+.menu .submenu li:hover{
+    background-color: rgba(255, 81, 0, 0.795);
+}
+.menu-mobile{
+	color: #fff;
+    background-color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 12px 0;
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+
+@media screen and (max-width : 480px){
+    .menu-mobile {
+	display:block;
+    }
+    nav ul{
+	display: none;
+    }
+    nav ul li, nav ul li a {
+	width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;}}
