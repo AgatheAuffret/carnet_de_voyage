@@ -107,7 +107,7 @@ article{
         font-size: 3rem;
     }
 
-    header{
+    .banner{
         line-height: 3.5;
         height: 200px;
         background-position: -550px -700px;
